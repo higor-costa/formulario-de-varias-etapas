@@ -95,3 +95,17 @@ main {
 }
 
 /*  Fim: Barra lateral e números */
+
+/* seções */
+section {
+    background-color: var(--Branco);
+    border-radius: 15px;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 90%;
+    height: 30rem;
+    padding: 30px 25px;
+}

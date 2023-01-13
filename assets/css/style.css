@@ -48,6 +48,10 @@
 .container-principal .barra-lateral {
     background: url('/assets/images/bg-sidebar-mobile.svg') no-repeat center;
     background-size: cover;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .barra-lateral .lista {

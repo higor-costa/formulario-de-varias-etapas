@@ -111,7 +111,7 @@ section {
 }
 /* Fim: seções */
 
-/* elementos das seções */
+/* Inicio: elementos das seções */
 section .titulo-secao {
     font-family: var(--Ubuntu-bold);
     color: var(--Azul-marinho);
@@ -123,3 +123,4 @@ section .paragrafo {
     margin: 15px 0 20px 0;
     width: 250px;
 }
+/* Fim: elementos das seções */

@@ -124,3 +124,10 @@ section .paragrafo {
     width: 250px;
 }
 /* Fim: elementos das seções */
+
+/* Início: formulário */
+form .container-label label {
+    font-family: var(--Ubuntu-medium);
+    color: var(--Azul-marinho);
+}
+/* Fim: formulário */

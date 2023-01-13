@@ -45,6 +45,7 @@
     outline: none;
 }
 
+/*  Início: Barra lateral e números */
 .container-principal .barra-lateral {
     background: url('/assets/images/bg-sidebar-mobile.svg') no-repeat center;
     background-size: cover;
@@ -86,3 +87,5 @@
 .lista li .container-titulo {
     display: none;
 }
+
+/*  Fim: Barra lateral e números */

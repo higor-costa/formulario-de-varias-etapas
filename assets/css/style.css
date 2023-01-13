@@ -136,4 +136,10 @@ form .container-label label {
     font-family: var(--Ubuntu-medium);
     color: var(--Azul-marinho);
 }
+
+form .container-label .menssagem-error {
+    font-family: var(--Ubuntu-medium);
+    font-size: .8rem;
+    color: var(--Morango-vermelho);
+}
 /* Fim: formulário */

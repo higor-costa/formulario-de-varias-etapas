@@ -126,6 +126,11 @@ section .paragrafo {
 /* Fim: elementos das seções */
 
 /* Início: formulário */
+form .container-label {
+    display: flex;
+    justify-content: space-between;
+}
+
 form .container-label label {
     font-family: var(--Ubuntu-medium);
     color: var(--Azul-marinho);

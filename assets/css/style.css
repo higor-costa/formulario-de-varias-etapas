@@ -53,6 +53,7 @@
 .barra-lateral .lista {
     display: flex;
     place-content: center;
+    gap: 15px;
 }
 
 .lista li {

@@ -34,3 +34,7 @@
 .lista li {
     list-style-type: none;
 }
+
+.lista li .container-titulo {
+    display: none;
+}

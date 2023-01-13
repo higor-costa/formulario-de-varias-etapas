@@ -25,3 +25,8 @@
     background: url('/assets/images/bg-sidebar-mobile.svg') no-repeat center;
     background-size: cover;
 }
+
+.barra-lateral .lista {
+    display: flex;
+    place-content: center;
+}

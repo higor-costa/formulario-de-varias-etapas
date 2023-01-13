@@ -96,7 +96,7 @@ main {
 
 /*  Fim: Barra lateral e números */
 
-/* seções */
+/* Início: seções */
 section {
     background-color: var(--Branco);
     border-radius: 15px;
@@ -109,6 +109,7 @@ section {
     height: 30rem;
     padding: 30px 25px;
 }
+/* Fim: seções */
 
 /* elementos das seções */
 section .titulo-secao {

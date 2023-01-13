@@ -20,3 +20,8 @@
     text-decoration: none;
     outline: none;
 }
+
+.container-principal .barra-lateral {
+    background: url('/assets/images/bg-sidebar-mobile.svg') no-repeat center;
+    background-size: cover;
+}

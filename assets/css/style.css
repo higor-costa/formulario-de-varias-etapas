@@ -45,6 +45,12 @@
     outline: none;
 }
 
+main {
+    background-color: var(--Azul-claro);
+    height: 100vh;
+    position: relative;
+}
+
 /*  Início: Barra lateral e números */
 .container-principal .barra-lateral {
     background: url('/assets/images/bg-sidebar-mobile.svg') no-repeat center;

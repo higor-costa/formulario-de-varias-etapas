@@ -109,3 +109,9 @@ section {
     height: 30rem;
     padding: 30px 25px;
 }
+
+/* elementos das seções */
+section .titulo-secao {
+    font-family: var(--Ubuntu-bold);
+    color: var(--Azul-marinho);
+}

@@ -129,6 +129,7 @@ section .paragrafo {
 form .container-label {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3px;
 }
 
 form .container-label label {

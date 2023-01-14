@@ -143,4 +143,18 @@ form .container-label .menssagem-error {
     font-size: .8rem;
     color: var(--Morango-vermelho);
 }
+
+form input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Cinza-frio);
+    margin-bottom: 20px;
+}
+
+form input::placeholder {
+    font-family: var(--Ubuntu-Regular);
+    font-size: 1.1rem;
+    color: var(--Azul-marinho);
+}
 /* Fim: formulário */

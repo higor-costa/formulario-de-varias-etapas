@@ -252,3 +252,54 @@ form input::placeholder {
     left: 55%;
 }
 /* Fim: select your plan */
+
+/* Início: pick add-ons */
+.servico-adicional {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--Cinza-frio);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.servico-adicional.ativo {
+    background-color: var(--Azul-claro);
+    border: 1px solid var(--Azul-púrpura);
+}
+
+.servico-adicional input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.servico-adicional div {
+    gap: 10px;
+    width: 80%;
+}
+
+.servico-adicional .servico-titulo {
+    font-size: 1rem;
+    font-family: var(--Ubuntu-bold);
+    color: var(--Azul-marinho);
+}
+
+.servico-adicional .servico-descricao {
+    font-size: .8rem;
+    font-family: var(--Ubuntu-medium);
+    color: var(--Cinza-frio);
+}
+
+.servico-adicional .servico-valor {
+    font-family: var(--Ubuntu-Regular);
+    font-size: .8rem;
+    color: var(--Azul-púrpura);
+}
+
+.servico-adicional .servico-valor:last-child {
+    display: none;
+}
+/* Fim: pick add-ons */

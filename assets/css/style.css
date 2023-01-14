@@ -161,10 +161,46 @@ form input::placeholder {
 /* Início: select your plan */
 .container-plano {
     display: flex;
+    align-items: flex-start;
     gap: 15px;
     border: 1px solid var(--Cinza-frio);
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 15px;
+    cursor: pointer;
+}
+
+.container-plano:hover {
+    border: 1px solid var(--Azul-púrpura);
+    background-color: var(--Azul-claro);
+}
+
+.container-plano div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-plano div .nome-plano {
+    font-family: var(--Ubuntu-bold);
+    font-size: 1rem;
+    color: var(--Azul-marinho);
+} 
+
+.container-plano div .valor-plano {
+    font-family: var(--Ubuntu-medium);
+    font-size: .9rem;
+    color: var(--Cinza-frio);
+}
+
+.container-plano div .bonus-plano {
+    font-size: .7rem;
+    font-family: var(--Ubuntu-medium);
+    color: var(--Azul-marinho);
+}
+
+.container-plano div .valor-plano:nth-child(3), 
+.container-plano div .bonus-plano {
+    display: none;
 }
 /* Fim: select your plan */

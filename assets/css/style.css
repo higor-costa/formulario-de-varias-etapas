@@ -286,7 +286,7 @@ form input::placeholder {
 
 .servico-adicional div {
     gap: 10px;
-    width: 80%;
+    width: 100%;
 }
 
 .servico-adicional .servico-titulo {

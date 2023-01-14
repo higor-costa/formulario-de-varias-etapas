@@ -303,3 +303,81 @@ form input::placeholder {
     display: none;
 }
 /* Fim: pick add-ons */
+
+/* Início: finishing up */
+.container-verificacao {
+    background-color: var(--Magnólia);
+    padding: 30px 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.container-verificacao .plano-escolhido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.plano-escolhido {
+    border-bottom: 1px solid var(--Cinza-claro);
+    padding-bottom: 15px;
+}
+
+.plano-escolhido .escolhido-titulo {
+    font-family: var(--Ubuntu-bold);
+    font-size: 1rem;
+    color: var(--Azul-marinho);
+}
+
+.plano-escolhido .botao-alterar-plano {
+    font-family: var(--Ubuntu-medium);
+    font-size: .9rem;
+    color: var(--Cinza-frio);
+    text-decoration: underline;
+}
+
+.plano-escolhido .valor-final {
+    font-family: var(--Ubuntu-bold);
+    font-size: .9rem;
+    color: var(--Azul-marinho);
+}
+
+.servicos-escolhidos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.servicos-escolhidos div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicos-escolhidos div .nome-servico {
+    font-family: var(--Ubuntu-bold);
+    font-size: 1rem;
+    color: var(--Cinza-frio);
+}
+
+.servicos-escolhidos div .valor-final {
+    font-family: var(--Ubuntu-medium);
+    font-size: .9rem;
+}
+
+.valores-finais {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.valores-finais .descricao-valor {
+    font-family: var(--Ubuntu-medium);
+    color: var(--Cinza-frio);
+}
+
+.valores-finais .valor-total {
+    font-family: var(--Ubuntu-bold);
+    color: var(--Azul-púrpura);
+}
+/* Fim: finishing up */

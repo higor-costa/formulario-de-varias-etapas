@@ -110,6 +110,11 @@ section {
     z-index: 10;
     width: 90%;
     padding: 30px 25px;
+    display: none;
+}
+
+section.ativo {
+    display: block;
 }
 /* Fim: seções */
 
@@ -387,11 +392,17 @@ form input::placeholder {
 
 /* Início: thank you */
 section.obrigado {
-    display: flex;
+    display: none;
+}
+section.obrigado {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 450px;
+}
+
+section.obrigado.ativo {
+    display: flex;
 }
 section.obrigado img.check {
     width: 3.5rem;

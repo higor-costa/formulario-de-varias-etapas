@@ -381,3 +381,27 @@ form input::placeholder {
     color: var(--Azul-púrpura);
 }
 /* Fim: finishing up */
+
+/* Início: thank you */
+section.obrigado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+section.obrigado img.check {
+    width: 3.5rem;
+}
+
+section.obrigado .titulo-obrigado {
+    font-family: var(--Ubuntu-bold);
+    margin-top: 25px;
+}
+
+section.obrigado .paragrafo {
+    width: 95%;
+    text-align: center;
+    line-height: 25px;
+}
+/* Fim: finishing up */

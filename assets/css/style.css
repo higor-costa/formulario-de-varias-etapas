@@ -49,6 +49,9 @@ main {
     background-color: var(--Azul-claro);
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*  Início: Barra lateral e números */

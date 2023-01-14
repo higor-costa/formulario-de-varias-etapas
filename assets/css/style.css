@@ -405,3 +405,62 @@ section.obrigado .paragrafo {
     line-height: 25px;
 }
 /* Fim: finishing up */
+
+/* Início: botoes inferiores */
+footer {
+    background-color: var(--Branco);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer button {
+    border: none;
+    font-family: var(--Ubuntu-bold);
+    font-size: 1rem;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer button.go-back {
+    background-color: transparent;
+    color: var(--Cinza-frio);
+    visibility: hidden;
+}
+
+footer button.ativo {
+    visibility: visible;
+}
+
+footer div {
+    position: relative;
+    width: 140px;
+}
+
+footer div button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+footer div button.next {
+    background-color: var(--Azul-marinho);
+    color: var(--Branco);
+    display: none;
+}
+
+footer div button.confirm {
+    background: var(--Azul-púrpura);
+    color: var(--Branco);
+    display: none;
+}
+
+footer div button.ativo {
+    display: inline-block;
+}
+/* Fim: botoes inferiores */

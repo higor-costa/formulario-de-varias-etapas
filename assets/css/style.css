@@ -203,4 +203,52 @@ form input::placeholder {
 .container-plano div .bonus-plano {
     display: none;
 }
+
+.switch-planos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--Magnólia);
+    padding: 15px 0;
+    margin-top: 25px;
+}
+
+.switch-planos .plano-mensal {
+    font-family: var(--Ubuntu-bold);
+    color: var(--Azul-marinho);
+}
+
+.switch-planos .plano-anual {
+    font-family: var(--Ubuntu-bold);
+    color: var(--Cinza-frio);
+}
+
+.switch-planos input {
+    appearance: none;
+    position: relative;
+    background: var(--Azul-marinho);
+    width: 3.5rem;
+    height: 1.7rem;
+    border-radius: 50px;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.switch-planos input::before {
+    content: '';
+    background: var(--Branco);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transition: .5s;
+    transform: translateY(-50%);
+}
+
+.switch-planos input:checked::before {
+    left: 55%;
+}
 /* Fim: select your plan */

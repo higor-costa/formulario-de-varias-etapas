@@ -24,6 +24,7 @@
         flex-direction: column;
         justify-content: flex-start;
         padding-left: 25px;
+        border-radius: 10px;
     }
 
     .barra-lateral .lista {

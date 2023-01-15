@@ -14,6 +14,7 @@
         'menu botoes';
     }
 
+    /* Início: barra-lateral */
     .container-principal .barra-lateral {
         grid-area: menu;
         background-image: url('/assets/images/bg-sidebar-desktop.svg');
@@ -52,4 +53,5 @@
         color: var(--Branco);
         cursor: pointer;
     }
+    /* Fim: barra-lateral */
 }

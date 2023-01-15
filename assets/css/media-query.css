@@ -13,4 +13,43 @@
         'menu secao'
         'menu botoes';
     }
+
+    .container-principal .barra-lateral {
+        grid-area: menu;
+        background-image: url('/assets/images/bg-sidebar-desktop.svg');
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 25px;
+    }
+
+    .barra-lateral .lista {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .lista li {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .lista li .container-titulo {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .container-titulo .step {
+        font-family: var(--Ubuntu-Regular);
+        font-size: .8rem;
+        color: var(--Cinza-claro);
+        margin-bottom: 3px;
+    }
+
+    .container-titulo .titulo {
+        font-family: var(--Ubuntu-bold);
+        font-size: 1.1rem;
+        color: var(--Branco);
+        cursor: pointer;
+    }
 }

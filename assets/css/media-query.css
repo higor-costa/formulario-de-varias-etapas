@@ -12,6 +12,7 @@
         grid-template-areas: 
         'menu secao'
         'menu botoes';
+        background-color: white;
     }
 
     /* Início: barra-lateral */
@@ -54,4 +55,15 @@
         cursor: pointer;
     }
     /* Fim: barra-lateral */
+
+    /* Início: seções */
+    section {
+        position: initial;
+        transform: translateX(0%);
+        z-index: 0;
+        width: 100%;
+        grid-area: secao;
+        grid-column: 3/4;
+    }
+    /* Fim: seções */
 }

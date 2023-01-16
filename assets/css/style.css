@@ -149,6 +149,7 @@ form .container-label .menssagem-error {
     font-family: var(--Ubuntu-medium);
     font-size: .8rem;
     color: var(--Morango-vermelho);
+    display: none;
 }
 
 form input {

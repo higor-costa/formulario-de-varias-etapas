@@ -70,12 +70,12 @@
     /* Fim: seções */
 
     /* Início: select your plan */
-    section div {
+    section .cards-planos {
         display: flex;
         justify-content: space-between;
     }
 
-    section div .container-plano {
+    section .cards-planos .container-plano {
         flex-direction: column;
         width: 10rem;
         gap: 50px;

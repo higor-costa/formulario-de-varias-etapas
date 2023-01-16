@@ -68,4 +68,39 @@
         grid-column: 3/4;
     }
     /* Fim: seções */
+
+    /* Início: select your plan */
+    section div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section div .container-plano {
+        flex-direction: column;
+        width: 10rem;
+        gap: 50px;
+    }
+
+    .switch-planos {
+        padding: 10px 0;
+        margin-top: 15px;
+    }
+
+    .switch-planos input {
+        width: 2.8rem;
+        height: 1.3rem;
+    }
+
+    .switch-planos input::before {
+        width: .9rem;
+        height: .9rem;
+    }
+    /* Fim: select your plan */
+
+    /* Início: seções */
+    footer {
+        grid-area: botoes;
+        grid-column: 3/4;
+    }
+    /* Fim: seções */
 }

@@ -69,6 +69,16 @@
     }
     /* Fim: seções */
 
+    /* Início: formulário */
+    form input {
+        padding: 10px;
+    }
+
+    form input::placeholder {
+        font-size: .8rem;
+    }
+    /* Fim: formulário */
+
     /* Início: select your plan */
     section .cards-planos {
         display: flex;

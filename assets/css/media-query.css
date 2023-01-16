@@ -101,6 +101,7 @@
     footer {
         grid-area: botoes;
         grid-column: 3/4;
+        height: auto;
     }
     /* Fim: seções */
 }

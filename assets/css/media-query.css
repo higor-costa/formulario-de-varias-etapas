@@ -9,8 +9,8 @@
         background-color: var(--Branco);
         padding: 10px;
         display: grid;
-        grid-template-columns: 300px 100px calc(100% - 500px) 100px;
-        grid-template-rows: calc(100% - 90px) 90px;
+        grid-template-columns: 260px 100px calc(100% - 460px) 100px;
+        grid-template-rows: calc(100% - 49px) 49px;
         grid-template-areas: 
         'menu secao'
         'menu botoes';

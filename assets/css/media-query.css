@@ -52,7 +52,7 @@
 
     .container-titulo .titulo {
         font-family: var(--Ubuntu-bold);
-        font-size: 1.1rem;
+        font-size: .9rem;
         color: var(--Branco);
         cursor: pointer;
     }

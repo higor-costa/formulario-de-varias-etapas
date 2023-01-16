@@ -103,5 +103,14 @@
         grid-column: 3/4;
         height: auto;
     }
+
+    footer button {
+        font-size: .8rem;
+        padding: 12px 10px;
+    }
+
+    footer div {
+        width: 100px;
+    }
     /* Fim: seções */
 }

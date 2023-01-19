@@ -130,4 +130,8 @@
         width: 80%;
         justify-self: center;
     }
+
+    form input {
+        padding: 15px;
+    }
 }

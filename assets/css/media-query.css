@@ -153,4 +153,19 @@
         gap: 130px;
     }
     /* Fim: select your plan */
+
+    /* Início: pick add-ons */
+    .servico-adicional {
+        padding: 20px;
+    }
+
+    .servico-adicional .servico-titulo {
+        font-size: 1.1rem;
+    }
+
+    .servico-adicional .servico-descricao,
+    .servico-adicional .servico-valor {
+        font-size: .9rem;
+    }
+    /* Fim: pick add-ons */
 }

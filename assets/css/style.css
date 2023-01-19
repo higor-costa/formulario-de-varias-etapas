@@ -391,6 +391,7 @@ form input::placeholder {
 /* Início: thank you */
 section.obrigado {
     display: none;
+    align-self: center;
 }
 section.obrigado {
     flex-direction: column;

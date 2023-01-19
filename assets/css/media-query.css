@@ -179,4 +179,15 @@
         padding-bottom: 25px;
     }
     /* Fim: finishing up */
+
+    /* Início: thank you */
+    section.obrigado .titulo-obrigado {
+        font-size: 2rem;
+    }
+
+    section.obrigado .paragrafo {
+        font-size: 1.2rem;
+        width: 562px;
+    }
+    /* Fim: thank you */
 }

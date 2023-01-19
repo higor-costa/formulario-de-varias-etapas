@@ -126,11 +126,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+    /* Início: seções */
     section {
         width: 80%;
         justify-self: center;
     }
-
+    /* Fim: seções */
+    
     form input {
         padding: 15px;
     }

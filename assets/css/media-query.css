@@ -168,4 +168,15 @@
         font-size: .9rem;
     }
     /* Fim: pick add-ons */
+
+    /* Início: finishing up */
+    .container-verificacao {
+        padding: 35px 30px;
+    }
+
+    .container-verificacao .plano-escolhido {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+    /* Fim: finishing up */
 }

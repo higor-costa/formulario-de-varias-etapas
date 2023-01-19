@@ -326,9 +326,6 @@ form input::placeholder {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.plano-escolhido {
     border-bottom: 1px solid var(--Cinza-claro);
     padding-bottom: 15px;
 }

@@ -132,7 +132,8 @@
         justify-self: center;
     }
     /* Fim: seções */
-    
+
+    /* Início: formulário */
     form input {
         padding: 15px;
     }
@@ -144,4 +145,5 @@
     form input {
         font-size: 1rem;
     }
+    /* Fim: formulário */
 }

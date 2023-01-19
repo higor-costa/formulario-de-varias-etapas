@@ -138,4 +138,8 @@
     form input::placeholder {
         font-size: 1rem;
     }
+
+    form input {
+        font-size: 1rem;
+    }
 }

@@ -146,4 +146,11 @@
         font-size: 1rem;
     }
     /* Fim: formulário */
+
+    /* Início: select your plan */
+    section .cards-planos .container-plano {
+        width: 13.5rem;
+        gap: 130px;
+    }
+    /* Fim: select your plan */
 }

@@ -12,7 +12,7 @@
     <main class="container-principal">
         <nav class="barra-lateral">
             <ul class="lista">
-                <li class="ativo">
+                <li class="ativo" data-step>
                     <a href="#" class="item">
                         <span class="numero">1</span>
                     </a>
@@ -22,7 +22,7 @@
                         <h2 class="titulo">Your info</h2>
                     </div>
                 </li>
-                <li>
+                <li data-step>
                     <a href="#" class="item">
                         <span class="numero">2</span>
                     </a>
@@ -32,7 +32,7 @@
                         <h2 class="titulo">Select plan</h2>
                     </div>
                 </li>
-                <li>
+                <li data-step>
                     <a href="#" class="item">
                         <span class="numero">3</span>
                     </a>
@@ -42,7 +42,7 @@
                         <h2 class="titulo">Add-ons</h2>
                     </div>
                 </li>
-                <li>
+                <li data-step>
                     <a href="#" class="item">
                         <span class="numero">4</span>
                     </a>
@@ -208,10 +208,10 @@
         </section>
 
         <footer>
-            <button class="go-back">Go Back</button>
+            <button class="go-back" data-navegacao>Go Back</button>
             <div>
-                <button class="next ativo">Next Step</button>
-                <button class="confirm" type="submit">Confirm</button>
+                <button class="next ativo" data-navegacao>Next Step</button>
+                <button class="confirm" data-navegacao type="submit">Confirm</button>
             </div>
         </footer> 
     </main>

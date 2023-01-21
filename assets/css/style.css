@@ -169,6 +169,17 @@ form input::placeholder {
     font-size: 1.1rem;
     color: var(--Azul-marinho);
 }
+
+form input.invalido {
+    border-color: var(--Morango-vermelho);
+}
+
+form input:valid {
+    border-color: lightseagreen;
+}
+form input:focus {
+    border-color: var(--Azul-púrpura);
+}
 /* Fim: formulário */
 
 /* Início: select your plan */

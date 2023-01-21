@@ -152,6 +152,10 @@ form .container-label .menssagem-error {
     display: none;
 }
 
+form .container-label .menssagem-error.ativo {
+    display: inline-block;
+}
+
 form input {
     width: 100%;
     padding: 15px;

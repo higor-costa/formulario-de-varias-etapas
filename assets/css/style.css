@@ -217,6 +217,14 @@ form input:focus {
     color: var(--Cinza-frio);
 }
 
+.container-plano div .valor-plano[data-plano="mensal"] {
+    display: none;
+}
+
+.container-plano div .valor-plano[data-plano="mensal"].ativo {
+    display: block;
+}
+
 .container-plano div .bonus-plano {
     font-size: .7rem;
     font-family: var(--Ubuntu-medium);
@@ -226,6 +234,11 @@ form input:focus {
 .container-plano div .valor-plano:nth-child(3), 
 .container-plano div .bonus-plano {
     display: none;
+}
+
+.container-plano div .valor-plano.ativo:nth-child(3), 
+.container-plano div .bonus-plano.ativo {
+    display: block;
 }
 
 .switch-planos {
@@ -240,12 +253,16 @@ form input:focus {
 
 .switch-planos .plano-mensal {
     font-family: var(--Ubuntu-bold);
-    color: var(--Azul-marinho);
+    color: var(--Cinza-frio);
 }
 
 .switch-planos .plano-anual {
     font-family: var(--Ubuntu-bold);
     color: var(--Cinza-frio);
+}
+
+.switch-planos span.ativo {
+    color: var(--Azul-marinho);
 }
 
 .switch-planos input {

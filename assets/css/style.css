@@ -194,7 +194,7 @@ form input:focus {
     cursor: pointer;
 }
 
-.container-plano:hover {
+.container-plano.escolhido {
     border: 1px solid var(--Azul-púrpura);
     background-color: var(--Azul-claro);
 }

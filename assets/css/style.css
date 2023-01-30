@@ -340,8 +340,12 @@ form input:focus {
     color: var(--Azul-púrpura);
 }
 
-.servico-adicional .servico-valor:last-child {
+.servico-adicional .servico-valor {
     display: none;
+}
+
+.servico-adicional .servico-valor.ativo {
+    display: block;
 }
 /* Fim: pick add-ons */
 

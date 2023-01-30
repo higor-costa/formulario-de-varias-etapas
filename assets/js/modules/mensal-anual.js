@@ -5,6 +5,7 @@ export default function planoMensalAnual() {
     const planoAnual = document.querySelectorAll('[data-plano="anual"]');
     const bonusPlano = document.querySelectorAll("[data-bonus]");
     const periodosPlanos = document.querySelectorAll(".switch-planos span");
+    const valoresServicosAdicionais = document.querySelectorAll('.servico-valor');
 
     planoAnual.forEach((plano) => {
       plano.classList.toggle("ativo"); // controla exibição do valor anual
@@ -20,6 +21,10 @@ export default function planoMensalAnual() {
 
     periodosPlanos.forEach((opcao) => {
       opcao.classList.toggle("ativo"); // período escolhido recebe cor mais escura
+    });
+
+    valoresServicosAdicionais.forEach((valor) => {
+      valor.classList.toggle('ativo');
     });
   }
   botaoSwitch.addEventListener("click", exibeMensalAnual);

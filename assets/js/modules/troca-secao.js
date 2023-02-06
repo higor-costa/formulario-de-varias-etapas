@@ -26,14 +26,15 @@ export default function trocaSecao() {
     sections[index - 1].classList.add("ativo"); // adiciona a classe 'ativo' à seção que deve ser exibida
   }
 
+  const form = document.querySelector('form');
   const botoes = document.querySelectorAll("[data-navegacao]");
   botoes.forEach((botao, index) => {
     botao.addEventListener("click", () => {
       const indexBotao = index;
       if (indexBotao === 0) {
         avancarVoltar(-1);
-      } else {
-        avancarVoltar(1);
+      } else if(form.checkValidity()){
+          avancarVoltar(1);
       }
     });
   });

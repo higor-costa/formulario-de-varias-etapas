@@ -57,5 +57,5 @@ export default function trocaSecao() {
   }
   
   const botaoNext = botoes[1];
-  botaoGo.addEventListener('click', habilitaDesabilitaBotao);
+  botaoNext.addEventListener('click', habilitaDesabilitaBotao);
 }

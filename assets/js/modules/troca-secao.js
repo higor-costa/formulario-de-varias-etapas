@@ -38,4 +38,24 @@ export default function trocaSecao() {
       }
     });
   });
+
+  function habilitaDesabilitaBotao() {
+      const secao = document.querySelector('.your-plan');
+
+      // Desabilita botão 'Next Step' assim que o usuário entra na seção de escolha de planos
+      if(secao.classList.contains('ativo')) {
+        botaoNext.disabled = true;
+      }
+
+      // O botão será habilitado novamente apenas se um plano for escolhido
+      const cardsPlanos = document.querySelectorAll('.container-plano')
+      cardsPlanos.forEach(card => {
+        card.addEventListener('click', () => {
+          botaoNext.disabled = false;
+        });
+      })
+  }
+  
+  const botaoNext = botoes[1];
+  botaoGo.addEventListener('click', habilitaDesabilitaBotao);
 }

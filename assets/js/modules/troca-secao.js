@@ -44,6 +44,8 @@ export default function trocaSecao() {
       const cardsPlanos = document.querySelectorAll('.container-plano');
       const cardsArray = Array.from(cardsPlanos);
       const cardEscolhido = cardsArray.some(verificaCardEscolhido);
+      const botaoNext = botoes[1];
+      const secaoForm = document.querySelector('[data-secao]');
 
       // verifica se algum plano foi escolhido pelo usuário e retorna true ou false
       function verificaCardEscolhido(card) {
@@ -62,8 +64,13 @@ export default function trocaSecao() {
           botaoNext.disabled = false;
         });
       })
+
+      if(secaoForm.classList.contains("ativo")) {
+        botaoNext.disabled = false;
+      }
   }
-  
-  const botaoNext = botoes[1];
-  botaoNext.addEventListener('click', habilitaDesabilitaBotao);
+
+  botoes.forEach(b => {
+    b.addEventListener('click', habilitaDesabilitaBotao);
+  })
 }

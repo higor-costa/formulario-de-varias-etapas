@@ -76,9 +76,10 @@ export default function trocaSecao() {
   botoes.forEach(b => {
     b.addEventListener('click', habilitaDesabilitaBotao);
   })
-
+  
+  // Esconde seção Finishing Up e exibe seção Your Plan
   function changePlano() {
-    avancarVoltar(-2);
+    avancarVoltar(-2); // -2 como argumento para poder voltar à seção Your Plan
     const botaoConfirm = document.querySelector('.confirm');
     botaoConfirm.classList.remove('ativo');
   }

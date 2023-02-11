@@ -23,7 +23,7 @@ export default function verificacaoConfirmacao() {
       cardEscolhido = this;
       div = cardEscolhido.lastElementChild;
       htmlValor = div.querySelector(".valor-plano.ativo");
-      atribuiValores(htmlValor);
+      atribuiValores(htmlValor, cardEscolhido);
     }
   }
 
@@ -37,12 +37,14 @@ export default function verificacaoConfirmacao() {
       htmlValor = div.querySelector('[data-plano="mensal"]'); // Se o checkbox estiver 'off' o valor escolhido será o mensal
     }
 
-    atribuiValores(htmlValor);
+    atribuiValores(htmlValor, cardEscolhido);
   }
 
-  function atribuiValores(htmlValor) {
+  function atribuiValores(htmlValor, cardEscolhido) {
     const valorPlano = document.querySelector(".plano-escolhido .valor-final");
     valorPlano.innerText = `+${htmlValor.innerText}`; // O valor do plano é atribuido na última seção
+    const nomePlano = document.querySelector('[data-nome-plano]');
+    nomePlano.innerText = cardEscolhido.querySelector('.nome-plano').innerText;
 
     const periodos = document.querySelectorAll("[data-periodo]");
     if (!botaoSwitch.checked) {

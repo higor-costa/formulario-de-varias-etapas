@@ -4,10 +4,13 @@ export default function trocaSecao() {
 
   // função invocada pelos botões, além disso recebe o index deles. O botão Go Back tem index = 0, já os outros dois botões tem index = 1
   function avancarVoltar(indexBotao) {
+    console.log('index do botao: ' + indexBotao)
     troca(secaoIndex += indexBotao);
+    console.log('secao index: ' + secaoIndex)
   }
 
   function troca(index) {
+    console.log('index troca: ' + index)
     const steps = document.querySelectorAll("[data-step]");
     const sections = document.querySelectorAll("section");
 
@@ -73,4 +76,12 @@ export default function trocaSecao() {
   botoes.forEach(b => {
     b.addEventListener('click', habilitaDesabilitaBotao);
   })
+
+  function changePlano() {
+    avancarVoltar(-2);
+    const botaoConfirm = document.querySelector('.confirm');
+    botaoConfirm.classList.remove('ativo');
+  }
+  const botaoChange = document.querySelector('.botao-alterar-plano');
+  botaoChange.addEventListener('click', changePlano);
 }

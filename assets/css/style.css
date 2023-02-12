@@ -319,7 +319,7 @@ form input:focus {
 
 .servico-adicional div {
     gap: 10px;
-    width: 100%;
+    width: calc(100% - 100px);
 }
 
 .servico-adicional .servico-titulo {

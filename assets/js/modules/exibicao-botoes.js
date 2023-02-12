@@ -36,7 +36,7 @@ export default function exibicaoBotoes() {
     const botaoNext = botoesBackNext[1];
     const botaoConfirm = botaoNext.nextElementSibling;
 
-    if (secaoObrigado.classList.contains("ativo")) {
+    if (secaoObrigado.classList.contains("ativo") || secaoFinishing.classList.contains("ativo")) {
       botaoNext.classList.remove("ativo");
     }
 

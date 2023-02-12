@@ -38,6 +38,8 @@ export default function exibicaoBotoes() {
 
     if (secaoObrigado.classList.contains("ativo") || secaoFinishing.classList.contains("ativo")) {
       botaoNext.classList.remove("ativo");
+    } else {
+      botaoNext.classList.add("ativo");
     }
 
     if (secaoFinishing.classList.contains("ativo")) {

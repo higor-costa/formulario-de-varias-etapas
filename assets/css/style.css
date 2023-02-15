@@ -183,6 +183,67 @@ form input:focus {
 /* Fim: formulário */
 
 /* Início: select your plan */
+.your-plan .popup {
+    display: none;
+}
+
+.your-plan .popup.ativo {
+    display: block;
+    background: var(--Morango-vermelho);
+    padding: 15px 0px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Ubuntu-Medium';
+    font-size: .8rem;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    animation: popup .5s forwards;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: (0, 0, 0);
+    }
+}
+
+.popup-aviso {
+    display: none;
+}
+
+.popup .fecha-popup, .popup-aviso.ativo {
+    position: absolute;
+    border-radius: 50%;
+    left: 100%;
+    bottom: 50%;
+    border: 1px solid var(--Morango-vermelho);
+    background-color: white;
+    color: var(--Morango-vermelho);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-16px);
+    cursor: pointer;
+}
+
+.popup-aviso.ativo {
+    display: flex; 
+    bottom: 90.5%;
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    font-weight: bolder;
+}
+
 .container-plano {
     display: flex;
     align-items: flex-start;

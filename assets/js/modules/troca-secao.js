@@ -79,6 +79,8 @@ export default function trocaSecao() {
     avancarVoltar(-2); // -2 como argumento para poder voltar à seção Your Plan
     const botaoConfirm = document.querySelector('.confirm');
     botaoConfirm.classList.remove('ativo');
+    const botaoNext = botoes[1];
+    botaoNext.classList.add('ativo');
   }
   const botaoChange = document.querySelector('.botao-alterar-plano');
   botaoChange.addEventListener('click', changePlano);

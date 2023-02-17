@@ -114,7 +114,7 @@ export default function verificacaoConfirmacao() {
       if(tresUltimosCaracteres === '/mo' || tresUltimosCaracteres === '/yr') {
         const periodoLimpo = tresUltimosCaracteres.replace('/', '');
         periodo = periodoLimpo;
-      } else {
+      } else { // tresUltimosCaracteres será igual a 'ano' ou 'mês'
         periodo = tresUltimosCaracteres;
       }
 

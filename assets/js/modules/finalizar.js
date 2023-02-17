@@ -70,7 +70,7 @@ export default function verificacaoConfirmacao() {
       // Remove serviço adicional quando checkbox for desmarcado.
       const arrayHtmlServicos = servicosEscolhidos.querySelectorAll(".nome-servico");
         arrayHtmlServicos.forEach((servicoEscolhidoHtml) => {
-        // nomes do serviços na 3º e 4º são equivalentes? então remove o serviço da 4º seção
+        // valor do atributo data dos serviços na 3º e 4º são equivalentes? então remove o serviço da 4º seção
         if (servicoEscolhidoHtml.dataset.nome === datasetTitulo) {
           servicosEscolhidos.removeChild(servicoEscolhidoHtml.parentNode);
         }

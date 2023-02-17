@@ -102,25 +102,50 @@ export default function verificacaoConfirmacao() {
   function somaValores() {
     let somaValor = 0;
     let valorLimpo;
-    let periodo;
-    const valoresServicosEscolhidos =
-    document.querySelectorAll("[data-valor-final]");
+    let periodoFinal;
+    const valoresServicosEscolhidos = document.querySelectorAll("[data-valor-final]");
 
     // Pega o valor de cada serviço adicionado à última seção e converte ele de string para number, para que a soma possa ser feita
     valoresServicosEscolhidos.forEach((valor) => {
       const valorString = valor.innerText.replace("+$", "");
-      if (valorString.endsWith("mo")) {
-        valorLimpo = +valorString.replace("/mo", "");
-        periodo = "mo";
+      const tresUltimosCaracteres = valorString.substring(valorString.length - 3);
+      let periodo;
+      if(tresUltimosCaracteres === '/mo' || tresUltimosCaracteres === '/yr') {
+        const periodoLimpo = tresUltimosCaracteres.replace('/', '');
+        periodo = periodoLimpo;
       } else {
-        valorLimpo = +valorString.replace("/yr", "");
-        periodo = "yr";
+        periodo = tresUltimosCaracteres;
+      }
+
+      switch (periodo) {
+        case "mo":
+          valorLimpo = +valorString.replace("/mo", "");
+          periodoFinal = periodo;
+          break;
+
+        case 'mês':
+          valorLimpo = +valorString.replace("/mês", "");
+          periodoFinal = periodo;
+          break;
+
+        case 'yr':
+          valorLimpo = +valorString.replace("/yr", "");
+          periodoFinal = periodo;
+          break;
+
+        case 'ano':
+          valorLimpo = +valorString.replace("/ano", "");
+          periodoFinal = periodo;
+          break;
+
+        default:
+          console.log('erro');
       }
 
       somaValor += valorLimpo;
     });
     const valorTotal = document.querySelector(".valor-total");
-    valorTotal.innerText = `+$${somaValor}/${periodo}`;
+    valorTotal.innerText = `+$${somaValor}/${periodoFinal}`;
   }
 
   // verifica se o usuário está na seção 'Finishing Up' para poder calcular o valor total

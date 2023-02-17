@@ -60,28 +60,29 @@ export default function verificacaoConfirmacao() {
   function pegaInformacoesCards(checkbox) {
     const card = checkbox.parentNode;
     const tituloServico = card.querySelector(".servico-titulo").innerText;
+    const datasetTitulo = card.querySelector(".servico-titulo").dataset.titulo;
 
     if (checkbox.checked) {
       const precoServico = card.querySelector(".servico-valor.ativo").innerText;
-      adicionaServico(tituloServico, precoServico);
-    } else {
+      adicionaServico(tituloServico, precoServico, datasetTitulo);
+    } 
+    else {
       // Remove serviço adicional quando checkbox for desmarcado.
-      const arrayHtmlServicos =
-        servicosEscolhidos.querySelectorAll(".nome-servico");
-        arrayHtmlServicos.forEach((nomeServico) => {
+      const arrayHtmlServicos = servicosEscolhidos.querySelectorAll(".nome-servico");
+        arrayHtmlServicos.forEach((servicoEscolhidoHtml) => {
         // nomes do serviços na 3º e 4º são equivalentes? então remove o serviço da 4º seção
-        if (nomeServico.innerText === tituloServico) {
-          servicosEscolhidos.removeChild(nomeServico.parentNode);
+        if (servicoEscolhidoHtml.dataset.nome === datasetTitulo) {
+          servicosEscolhidos.removeChild(servicoEscolhidoHtml.parentNode);
         }
       });
     }
   }
 
   // Adiciona serviço adicional à 4º seção
-  function adicionaServico(tituloServico, precoServico) {
+  function adicionaServico(tituloServico, precoServico, datasetTitulo) {
     const novoServico = document.createElement("div");
     novoServico.innerHTML = `
-    <span class="nome-servico">${tituloServico}</span>
+    <span class="nome-servico" data-nome="${datasetTitulo}">${tituloServico}</span>
     <span class="valor-final" data-valor-final>${precoServico}</span>`;
 
     servicosEscolhidos.appendChild(novoServico);

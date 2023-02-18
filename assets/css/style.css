@@ -189,14 +189,16 @@ form input:focus {
 
 .your-plan .popup.ativo {
     display: block;
-    background: var(--Morango-vermelho);
-    padding: 15px 0px;
-    color: white;
+    padding: 10px 0px;
+    border: 1px solid #FFAF7E;
+    color: #FFAF7E;
     font-weight: bold;
     font-family: 'Ubuntu-Medium';
     font-size: .8rem;
     border-radius: 20px;
     z-index: 1;
+    box-shadow: -2px -1px;
+    margin: auto;
     position: relative;
     text-align: center;
     width: 100%;
@@ -214,18 +216,23 @@ form input:focus {
     }
 }
 
-.popup-aviso {
+.your-plan .container-exclamacao {
+    position: relative;
+    width: 100%;
+}
+
+.container-exclamacao .popup-exclamacao {
     display: none;
 }
 
-.popup .fecha-popup, .popup-aviso.ativo {
+.popup .fecha-popup, .popup-exclamacao.ativo {
     position: absolute;
     border-radius: 50%;
     left: 100%;
     bottom: 50%;
-    border: 1px solid var(--Morango-vermelho);
+    border: 1px solid #FFAF7E;
     background-color: white;
-    color: var(--Morango-vermelho);
+    color: #FFAF7E;
     width: 30px;
     height: 30px;
     display: flex;
@@ -235,10 +242,10 @@ form input:focus {
     cursor: pointer;
 }
 
-.popup-aviso.ativo {
-    display: flex; 
-    bottom: 90.5%;
-    left: 95%;
+.popup-exclamacao.ativo {
+    display: flex;
+    left: 98%;
+    top: 100%;
     width: 30px;
     height: 30px;
     font-weight: bolder;

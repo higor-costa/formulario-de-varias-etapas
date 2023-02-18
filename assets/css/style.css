@@ -546,6 +546,11 @@ footer button.go-back {
     background-color: transparent;
     color: var(--Cinza-frio);
     visibility: hidden;
+    transition: background .3s ease-in-out;
+}
+
+footer button.go-back:hover {
+    color: var(--Azul-marinho);
 }
 
 footer button.ativo {
@@ -569,12 +574,26 @@ footer div button.next {
     background-color: var(--Azul-marinho);
     color: var(--Branco);
     display: none;
+    transition: background .3s ease-in-out;
+}
+
+footer div button.next:hover {
+    background-color: transparent;
+    color: var(--Azul-marinho);
+    border: 1px solid var(--Azul-marinho);
 }
 
 footer div button.confirm {
     background: var(--Azul-púrpura);
     color: var(--Branco);
     display: none;
+    transition: background .3s ease-in-out;
+}
+
+footer div button.confirm:hover {
+    background-color: transparent;
+    color: var(--Azul-púrpura);
+    border: 1px solid var(--Azul-púrpura);
 }
 
 footer div button.ativo {

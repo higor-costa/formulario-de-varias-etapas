@@ -262,6 +262,10 @@ form input:focus {
     cursor: pointer;
 }
 
+.container-plano:hover {
+    border-color: var(--Azul-marinho);
+}
+
 .container-plano.escolhido {
     border: 1px solid var(--Azul-púrpura);
     background-color: var(--Azul-claro);
@@ -371,6 +375,10 @@ form input:focus {
     border-radius: 10px;
     margin-bottom: 15px;
     width: 100%;
+}
+
+.servico-adicional:hover {
+    border-color: var(--Azul-marinho);
 }
 
 .servico-adicional.ativo {

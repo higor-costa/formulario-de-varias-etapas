@@ -553,6 +553,7 @@ footer button {
 
 footer button.go-back {
     background-color: transparent;
+    padding-left: 0;
     color: var(--Cinza-frio);
     visibility: hidden;
     transition: background .3s ease-in-out;

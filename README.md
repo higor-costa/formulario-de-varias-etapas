@@ -22,8 +22,8 @@ Esta é uma solução para o [desafio de formulário em várias etapas no Fronte
 
 ### Links
 
-- URL da solução: [Solução - Frontend Mentor](https://your-solution-url.com)
-- URL do site ao vivo: [Formulário em Várias Etapas](https://your-live-site-url.com)
+- URL da solução: [Solução - Frontend Mentor](https://www.frontendmentor.io/solutions/formulrio-de-vrias-etapas-GrNmiveuPg)
+- URL do site ao vivo: [Formulário em Várias Etapas](https://higor-costa.github.io/formulario-de-varias-etapas/)
 
 ## Meu processo
 

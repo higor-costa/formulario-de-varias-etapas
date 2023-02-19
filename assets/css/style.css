@@ -406,7 +406,7 @@ form input:focus {
 }
 
 .servico-adicional .servico-descricao {
-    font-size: .8rem;
+    font-size: .7rem;
     font-family: var(--Ubuntu-medium);
     color: var(--Cinza-frio);
 }

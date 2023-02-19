@@ -129,6 +129,7 @@ section .paragrafo {
     color: var(--Cinza-frio);
     margin: 15px 0 20px 0;
     width: 280px;
+    line-height: 1.5;
 }
 /* Fim: elementos das seções */
 

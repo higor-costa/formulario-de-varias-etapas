@@ -167,7 +167,7 @@ form input {
 
 form input::placeholder {
     font-family: var(--Ubuntu-Regular);
-    font-size: 1.1rem;
+    font-size: .9rem;
     color: var(--Azul-marinho);
 }
 

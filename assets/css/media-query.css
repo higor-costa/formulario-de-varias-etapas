@@ -29,7 +29,7 @@
     /* Início: barra-lateral */
     .container-principal .barra-lateral {
         grid-area: menu;
-        background-image: url('/assets/images/bg-sidebar-desktop.svg');
+        background-image: url('../images/bg-sidebar-desktop.svg');
         height: 100%;
         flex-direction: column;
         justify-content: flex-start;

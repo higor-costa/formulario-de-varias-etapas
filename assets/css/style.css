@@ -146,14 +146,14 @@ form .container-label label {
     color: var(--Azul-marinho);
 }
 
-form .container-label .menssagem-error {
+form .container-label .mensagem-error {
     font-family: var(--Ubuntu-medium);
     font-size: .8rem;
     color: var(--Morango-vermelho);
     display: none;
 }
 
-form .container-label .menssagem-error.ativo {
+form .container-label .mensagem-error.ativo {
     display: inline-block;
 }
 

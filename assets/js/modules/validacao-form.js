@@ -8,7 +8,7 @@ export default function validacaoForm() {
     if (event.target.localName === "input") {
       const input = event.target;
       const containerLabel = input.previousElementSibling;
-      const mensagemErro = containerLabel.querySelector(".menssagem-error");
+      const mensagemErro = containerLabel.querySelector(".mensagem-error");
 
       if (!input.checkValidity()) {
         input.classList.add("invalido");
@@ -25,7 +25,7 @@ export default function validacaoForm() {
         if (!input.checkValidity()) {
           input.classList.add("invalido");
           const indexInput = index;
-          const mensagensErro = document.querySelectorAll(".menssagem-error");
+          const mensagensErro = document.querySelectorAll(".mensagem-error");
           mensagensErro[indexInput].classList.add("ativo"); // exibe a mensagem erro que apresentar index igual ao index do input
         }
       });

@@ -569,15 +569,16 @@ footer button.ativo {
 
 footer div {
     position: relative;
-    width: 140px;
+    width: 155px;
 }
 
 footer div button {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    right: 0;
+    transform: translateY(-50%);
+    width: auto;
+    white-space: nowrap;
 }
 
 footer div button.next {

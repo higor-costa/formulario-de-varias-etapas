@@ -126,11 +126,6 @@
 
     footer button {
         font-size: .8rem;
-        padding: 12px 10px;
-    }
-
-    footer div {
-        width: 110px;
     }
     /* Fim: seções */
 }
@@ -209,11 +204,6 @@
 
     footer button {
         font-size: 1rem;
-        padding: 14px 0;
-    }
-
-    footer div {
-        width: 120px;
     }
     /* Fim: botoes inferiores */
 }

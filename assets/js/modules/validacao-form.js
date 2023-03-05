@@ -12,7 +12,7 @@ export default function validacaoForm() {
 
       if (!input.checkValidity()) {
         input.classList.add("invalido");
-        mensagemErro.classList.add("ativo");
+        mensagemErroExibida(input, mensagemErro)
       } else {
         input.classList.remove("invalido");
         mensagemErro.classList.remove("ativo");
@@ -29,6 +29,17 @@ export default function validacaoForm() {
           mensagensErro[indexInput].classList.add("ativo"); // exibe a mensagem erro que apresentar index igual ao index do input
         }
       });
+    }
+
+    function mensagemErroExibida(input, mensagemErro) {
+      const quantidadeCaracteres = input.value.length;
+      if (quantidadeCaracteres === 0) {
+        mensagemErro.innerText = 'This field is required.';
+      } 
+      else {
+        mensagemErro.innerText = 'Invalid! Please note the example.';
+      }
+      mensagemErro.classList.add("ativo");
     }
   }
 
